@@ -1,3 +1,7 @@
+#!/usr/bin/osascript
+--change_term.scpt
+--expects 1 argument, the name of a terminal theme
+--changes all open terminal tabs to that theme
 on run argv
     tell application "Terminal"
         repeat with w from 1 to count windows
